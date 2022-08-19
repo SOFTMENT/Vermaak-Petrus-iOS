@@ -1,0 +1,6 @@
+framework module Pods_PropheticAwakening {
+  umbrella header "Pods-PropheticAwakening-umbrella.h"
+
+  export *
+  module * { export * }
+}

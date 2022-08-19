@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HcK-Ke-sCr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="d5b-1W-Fky">
+            <objects>
+                <viewController id="HcK-Ke-sCr" customClass="HomeViewController" customModule="Journaly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JiK-A8-GQ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uXp-4k-T8J">
+                                <rect key="frame" x="0.0" y="44" width="414" height="4"/>
+                                <color key="progressTintColor" systemColor="linkColor"/>
+                                <color key="trackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHi-TG-OJb">
+                                <rect key="frame" x="0.0" y="49" width="414" height="813"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSU-ge-WO5">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GFK-Bv-efc">
+                                        <rect key="frame" x="82" y="282" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="hhv-gW-s4A"/>
+                                            <constraint firstAttribute="width" constant="250" id="oxL-mn-gan"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GFK-Bv-efc" firstAttribute="centerY" secondItem="HSU-ge-WO5" secondAttribute="centerY" id="eHJ-zY-RY7"/>
+                                    <constraint firstItem="GFK-Bv-efc" firstAttribute="centerX" secondItem="HSU-ge-WO5" secondAttribute="centerX" id="eXc-WQ-QvU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="csI-q0-0u8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="csI-q0-0u8" firstAttribute="bottom" secondItem="eHi-TG-OJb" secondAttribute="bottom" id="GFg-7M-sPe"/>
+                            <constraint firstItem="csI-q0-0u8" firstAttribute="trailing" secondItem="eHi-TG-OJb" secondAttribute="trailing" id="IrB-cj-jyJ"/>
+                            <constraint firstItem="csI-q0-0u8" firstAttribute="trailing" secondItem="HSU-ge-WO5" secondAttribute="trailing" id="KSj-ex-1pq"/>
+                            <constraint firstItem="csI-q0-0u8" firstAttribute="bottom" secondItem="HSU-ge-WO5" secondAttribute="bottom" id="NX6-Yh-0zz"/>
+                            <constraint firstItem="HSU-ge-WO5" firstAttribute="leading" secondItem="csI-q0-0u8" secondAttribute="leading" id="TF8-ic-qh3"/>
+                            <constraint firstItem="uXp-4k-T8J" firstAttribute="leading" secondItem="csI-q0-0u8" secondAttribute="leading" id="Vy1-ne-K6E"/>
+                            <constraint firstItem="uXp-4k-T8J" firstAttribute="top" secondItem="csI-q0-0u8" secondAttribute="top" id="efh-dj-gbn"/>
+                            <constraint firstItem="csI-q0-0u8" firstAttribute="trailing" secondItem="uXp-4k-T8J" secondAttribute="trailing" id="m7s-7t-Xfx"/>
+                            <constraint firstItem="eHi-TG-OJb" firstAttribute="leading" secondItem="csI-q0-0u8" secondAttribute="leading" id="nVW-92-DwL"/>
+                            <constraint firstItem="HSU-ge-WO5" firstAttribute="top" secondItem="uXp-4k-T8J" secondAttribute="bottom" id="t7Y-4g-4Ab"/>
+                            <constraint firstItem="eHi-TG-OJb" firstAttribute="top" secondItem="uXp-4k-T8J" secondAttribute="bottomMargin" constant="9" id="vVH-29-aRh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="07t-Cv-vaf"/>
+                    <connections>
+                        <outlet property="imageBackView" destination="HSU-ge-WO5" id="Qgi-Ao-17H"/>
+                        <outlet property="imageView" destination="GFK-Bv-efc" id="And-FR-qav"/>
+                        <outlet property="progressBar" destination="uXp-4k-T8J" id="zPd-YL-EcS"/>
+                        <outlet property="webView" destination="eHi-TG-OJb" id="3f0-XN-vcx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdX-GT-IuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

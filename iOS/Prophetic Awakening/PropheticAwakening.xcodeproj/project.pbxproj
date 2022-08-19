@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1886D948286B89D600DEE59A /* No_Internet.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1886D947286B89D600DEE59A /* No_Internet.gif */; };
+		18A7897B28AAF8CB00AC9E22 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7897A28AAF8CB00AC9E22 /* NotificationService.swift */; };
+		18A7897F28AAF8CB00AC9E22 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18A7897828AAF8CB00AC9E22 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18A7898628AAF9F500AC9E22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18A7898528AAF9F500AC9E22 /* GoogleService-Info.plist */; };
+		A803056CF38A673BDFBA310C /* Pods_PropheticAwakening.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F118E508D2F5E51A857FE58D /* Pods_PropheticAwakening.framework */; };
+		FE9CF24C242443AD0078F957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9CF24B242443AD0078F957 /* AppDelegate.swift */; };
+		FE9CF24E242443AD0078F957 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9CF24D242443AD0078F957 /* SceneDelegate.swift */; };
+		FE9CF253242443AD0078F957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9CF251242443AD0078F957 /* Main.storyboard */; };
+		FE9CF255242443B20078F957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9CF254242443B20078F957 /* Assets.xcassets */; };
+		FE9CF258242443B20078F957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9CF256242443B20078F957 /* LaunchScreen.storyboard */; };
+		FE9CF26224244B1C0078F957 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9CF26124244B1C0078F957 /* HomeViewController.swift */; };
+		FEE9567E242BA7230017910F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE9567D242BA7230017910F /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A7897D28AAF8CB00AC9E22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE9CF240242443AD0078F957 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A7897728AAF8CB00AC9E22;
+			remoteInfo = NotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1819CAE628AAAA600029AD1F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18A7897F28AAF8CB00AC9E22 /* NotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01CD7B32430BF5787CAF49B5 /* Pods-Journaly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journaly.release.xcconfig"; path = "Target Support Files/Pods-Journaly/Pods-Journaly.release.xcconfig"; sourceTree = "<group>"; };
+		1886D947286B89D600DEE59A /* No_Internet.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = No_Internet.gif; sourceTree = "<group>"; };
+		18A7897828AAF8CB00AC9E22 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A7897A28AAF8CB00AC9E22 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		18A7897C28AAF8CB00AC9E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A7898528AAF9F500AC9E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1FBAADA2824DF0167CBD84EC /* Pods-Tourcrib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourcrib.release.xcconfig"; path = "Target Support Files/Pods-Tourcrib/Pods-Tourcrib.release.xcconfig"; sourceTree = "<group>"; };
+		247901445132BDA58C49ABA3 /* Pods-Eduvational Discipleship Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eduvational Discipleship Training.release.xcconfig"; path = "Target Support Files/Pods-Eduvational Discipleship Training/Pods-Eduvational Discipleship Training.release.xcconfig"; sourceTree = "<group>"; };
+		29378855F579B31100DE4127 /* Pods-Shalowsh Business Academy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shalowsh Business Academy.release.xcconfig"; path = "Target Support Files/Pods-Shalowsh Business Academy/Pods-Shalowsh Business Academy.release.xcconfig"; sourceTree = "<group>"; };
+		29D8B065EC58487D5F3D3760 /* Pods-Prophetic Awakening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prophetic Awakening.release.xcconfig"; path = "Target Support Files/Pods-Prophetic Awakening/Pods-Prophetic Awakening.release.xcconfig"; sourceTree = "<group>"; };
+		30EDE969BB84FB985BF4F977 /* Pods-Eduvational Discipleship Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eduvational Discipleship Training.debug.xcconfig"; path = "Target Support Files/Pods-Eduvational Discipleship Training/Pods-Eduvational Discipleship Training.debug.xcconfig"; sourceTree = "<group>"; };
+		5B440F904EDA74B6DE45CE26 /* Pods-PropheticAwakening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PropheticAwakening.release.xcconfig"; path = "Target Support Files/Pods-PropheticAwakening/Pods-PropheticAwakening.release.xcconfig"; sourceTree = "<group>"; };
+		7287128C8348C8396CC13556 /* Pods-Prophetic Awakening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prophetic Awakening.debug.xcconfig"; path = "Target Support Files/Pods-Prophetic Awakening/Pods-Prophetic Awakening.debug.xcconfig"; sourceTree = "<group>"; };
+		97BDC29DDE0F5CC49D6C9397 /* Pods-Journaly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journaly.debug.xcconfig"; path = "Target Support Files/Pods-Journaly/Pods-Journaly.debug.xcconfig"; sourceTree = "<group>"; };
+		A5A11828DF241D85B0CAD59D /* Pods-Coursely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coursely.debug.xcconfig"; path = "Target Support Files/Pods-Coursely/Pods-Coursely.debug.xcconfig"; sourceTree = "<group>"; };
+		B1635D8A26356A0200B14ED6 /* PropheticAwakening.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PropheticAwakening.entitlements; sourceTree = "<group>"; };
+		C2B74A3181B7AF79F1811E13 /* Pods-Tourcrib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourcrib.debug.xcconfig"; path = "Target Support Files/Pods-Tourcrib/Pods-Tourcrib.debug.xcconfig"; sourceTree = "<group>"; };
+		C50D53204D285220F205527F /* Pods-PropheticAwakening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PropheticAwakening.debug.xcconfig"; path = "Target Support Files/Pods-PropheticAwakening/Pods-PropheticAwakening.debug.xcconfig"; sourceTree = "<group>"; };
+		D241D5005F913C5EC11F1A12 /* Pods-Coursely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coursely.release.xcconfig"; path = "Target Support Files/Pods-Coursely/Pods-Coursely.release.xcconfig"; sourceTree = "<group>"; };
+		EA17490C010FC9C180975AE5 /* Pods-Shalowsh Business Academy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shalowsh Business Academy.debug.xcconfig"; path = "Target Support Files/Pods-Shalowsh Business Academy/Pods-Shalowsh Business Academy.debug.xcconfig"; sourceTree = "<group>"; };
+		F118E508D2F5E51A857FE58D /* Pods_PropheticAwakening.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PropheticAwakening.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9CF248242443AD0078F957 /* PropheticAwakening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropheticAwakening.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9CF24B242443AD0078F957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE9CF24D242443AD0078F957 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE9CF252242443AD0078F957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE9CF254242443B20078F957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE9CF257242443B20078F957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE9CF259242443B20078F957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE9CF26124244B1C0078F957 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FEE9567D242BA7230017910F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A7897528AAF8CB00AC9E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE9CF245242443AD0078F957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE9567E242BA7230017910F /* WebKit.framework in Frameworks */,
+				A803056CF38A673BDFBA310C /* Pods_PropheticAwakening.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A7897928AAF8CB00AC9E22 /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				18A7897A28AAF8CB00AC9E22 /* NotificationService.swift */,
+				18A7897C28AAF8CB00AC9E22 /* Info.plist */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		2BBFC366CEDDC3E36CE7EAE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEE9567D242BA7230017910F /* WebKit.framework */,
+				F118E508D2F5E51A857FE58D /* Pods_PropheticAwakening.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3673033D94E3C3DD6C009D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2B74A3181B7AF79F1811E13 /* Pods-Tourcrib.debug.xcconfig */,
+				1FBAADA2824DF0167CBD84EC /* Pods-Tourcrib.release.xcconfig */,
+				EA17490C010FC9C180975AE5 /* Pods-Shalowsh Business Academy.debug.xcconfig */,
+				29378855F579B31100DE4127 /* Pods-Shalowsh Business Academy.release.xcconfig */,
+				30EDE969BB84FB985BF4F977 /* Pods-Eduvational Discipleship Training.debug.xcconfig */,
+				247901445132BDA58C49ABA3 /* Pods-Eduvational Discipleship Training.release.xcconfig */,
+				97BDC29DDE0F5CC49D6C9397 /* Pods-Journaly.debug.xcconfig */,
+				01CD7B32430BF5787CAF49B5 /* Pods-Journaly.release.xcconfig */,
+				A5A11828DF241D85B0CAD59D /* Pods-Coursely.debug.xcconfig */,
+				D241D5005F913C5EC11F1A12 /* Pods-Coursely.release.xcconfig */,
+				7287128C8348C8396CC13556 /* Pods-Prophetic Awakening.debug.xcconfig */,
+				29D8B065EC58487D5F3D3760 /* Pods-Prophetic Awakening.release.xcconfig */,
+				C50D53204D285220F205527F /* Pods-PropheticAwakening.debug.xcconfig */,
+				5B440F904EDA74B6DE45CE26 /* Pods-PropheticAwakening.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE9CF23F242443AD0078F957 = {
+			isa = PBXGroup;
+			children = (
+				FE9CF24A242443AD0078F957 /* PropheticAwakening */,
+				18A7897928AAF8CB00AC9E22 /* NotificationService */,
+				FE9CF249242443AD0078F957 /* Products */,
+				2BBFC366CEDDC3E36CE7EAE1 /* Frameworks */,
+				F3673033D94E3C3DD6C009D2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FE9CF249242443AD0078F957 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE9CF248242443AD0078F957 /* PropheticAwakening.app */,
+				18A7897828AAF8CB00AC9E22 /* NotificationService.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE9CF24A242443AD0078F957 /* PropheticAwakening */ = {
+			isa = PBXGroup;
+			children = (
+				B1635D8A26356A0200B14ED6 /* PropheticAwakening.entitlements */,
+				FE9CF24B242443AD0078F957 /* AppDelegate.swift */,
+				FE9CF24D242443AD0078F957 /* SceneDelegate.swift */,
+				FE9CF251242443AD0078F957 /* Main.storyboard */,
+				FE9CF254242443B20078F957 /* Assets.xcassets */,
+				FE9CF256242443B20078F957 /* LaunchScreen.storyboard */,
+				FE9CF259242443B20078F957 /* Info.plist */,
+				1886D947286B89D600DEE59A /* No_Internet.gif */,
+				18A7898528AAF9F500AC9E22 /* GoogleService-Info.plist */,
+				FE9CF26124244B1C0078F957 /* HomeViewController.swift */,
+			);
+			path = PropheticAwakening;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A7897728AAF8CB00AC9E22 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A7898028AAF8CB00AC9E22 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				18A7897428AAF8CB00AC9E22 /* Sources */,
+				18A7897528AAF8CB00AC9E22 /* Frameworks */,
+				18A7897628AAF8CB00AC9E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationService;
+			productName = NotificationService;
+			productReference = 18A7897828AAF8CB00AC9E22 /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FE9CF247242443AD0078F957 /* PropheticAwakening */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE9CF25C242443B20078F957 /* Build configuration list for PBXNativeTarget "PropheticAwakening" */;
+			buildPhases = (
+				65DF776C65DB243B0AC97930 /* [CP] Check Pods Manifest.lock */,
+				FE9CF244242443AD0078F957 /* Sources */,
+				FE9CF245242443AD0078F957 /* Frameworks */,
+				FE9CF246242443AD0078F957 /* Resources */,
+				940CAB979D52674D5E2E066D /* [CP] Embed Pods Frameworks */,
+				1819CAE628AAAA600029AD1F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A7897E28AAF8CB00AC9E22 /* PBXTargetDependency */,
+			);
+			name = PropheticAwakening;
+			productName = "Sweet Tooth";
+			productReference = FE9CF248242443AD0078F957 /* PropheticAwakening.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE9CF240242443AD0078F957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = OriginalDevelopment;
+				TargetAttributes = {
+					18A7897728AAF8CB00AC9E22 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FE9CF247242443AD0078F957 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FE9CF243242443AD0078F957 /* Build configuration list for PBXProject "PropheticAwakening" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE9CF23F242443AD0078F957;
+			productRefGroup = FE9CF249242443AD0078F957 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE9CF247242443AD0078F957 /* PropheticAwakening */,
+				18A7897728AAF8CB00AC9E22 /* NotificationService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A7897628AAF8CB00AC9E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE9CF246242443AD0078F957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A7898628AAF9F500AC9E22 /* GoogleService-Info.plist in Resources */,
+				FE9CF258242443B20078F957 /* LaunchScreen.storyboard in Resources */,
+				FE9CF255242443B20078F957 /* Assets.xcassets in Resources */,
+				FE9CF253242443AD0078F957 /* Main.storyboard in Resources */,
+				1886D948286B89D600DEE59A /* No_Internet.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65DF776C65DB243B0AC97930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PropheticAwakening-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		940CAB979D52674D5E2E066D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PropheticAwakening/Pods-PropheticAwakening-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PropheticAwakening/Pods-PropheticAwakening-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PropheticAwakening/Pods-PropheticAwakening-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A7897428AAF8CB00AC9E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A7897B28AAF8CB00AC9E22 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE9CF244242443AD0078F957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9CF24C242443AD0078F957 /* AppDelegate.swift in Sources */,
+				FE9CF24E242443AD0078F957 /* SceneDelegate.swift in Sources */,
+				FE9CF26224244B1C0078F957 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A7897E28AAF8CB00AC9E22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A7897728AAF8CB00AC9E22 /* NotificationService */;
+			targetProxy = 18A7897D28AAF8CB00AC9E22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE9CF251242443AD0078F957 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE9CF252242443AD0078F957 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE9CF256242443B20078F957 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE9CF257242443B20078F957 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A7898128AAF8CB00AC9E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97MDRVJBTU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 OriginalDevelopment. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.softment.PropheticAwakening.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18A7898228AAF8CB00AC9E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97MDRVJBTU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 OriginalDevelopment. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.softment.PropheticAwakening.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE9CF25A242443B20078F957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE9CF25B242443B20078F957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE9CF25D242443B20078F957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C50D53204D285220F205527F /* Pods-PropheticAwakening.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PropheticAwakening/PropheticAwakening.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97MDRVJBTU;
+				INFOPLIST_FILE = PropheticAwakening/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = in.softment.PropheticAwakening;
+				PRODUCT_NAME = PropheticAwakening;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE9CF25E242443B20078F957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B440F904EDA74B6DE45CE26 /* Pods-PropheticAwakening.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PropheticAwakening/PropheticAwakening.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97MDRVJBTU;
+				INFOPLIST_FILE = PropheticAwakening/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = in.softment.PropheticAwakening;
+				PRODUCT_NAME = PropheticAwakening;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A7898028AAF8CB00AC9E22 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A7898128AAF8CB00AC9E22 /* Debug */,
+				18A7898228AAF8CB00AC9E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE9CF243242443AD0078F957 /* Build configuration list for PBXProject "PropheticAwakening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE9CF25A242443B20078F957 /* Debug */,
+				FE9CF25B242443B20078F957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE9CF25C242443B20078F957 /* Build configuration list for PBXNativeTarget "PropheticAwakening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE9CF25D242443B20078F957 /* Debug */,
+				FE9CF25E242443B20078F957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE9CF240242443AD0078F957 /* Project object */;
+}
